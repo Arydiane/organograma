@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import Botao from '../Botao'
 import { useState } from 'react'
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const times = [
         'Programação',
@@ -23,7 +23,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento ) => {
         evento.preventDefault()
-        console.log('Form foi submetido =>', nome, cargo, imagem, time)
+        props.aoColaboradorCadastrado ( {
+            nome, 
+            cargo, 
+            imagem, 
+            time
+        })
     }
 
     return (
@@ -53,7 +58,7 @@ const Formulario = () => {
                     label="Time" 
                     itens={times}
                     valor={time}
-                    aoAlterado={ valor => setTime(valor)}
+                    aoAlterado={valor => setTime(valor)}
                 />
                 <Botao>
                     Criar Card
