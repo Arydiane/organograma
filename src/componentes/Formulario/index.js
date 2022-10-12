@@ -11,7 +11,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
     const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
     const [nomeTime, setNomeTime] = useState('')
-    const [corTime, setCorTime] = useState('')
+    const [corTime, setCorTime] = useState('#000000')
 
     const aoSubmeter = (evento ) => {
         evento.preventDefault()
