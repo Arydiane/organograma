@@ -1,11 +1,12 @@
 # Projeto Organo
-Projeto Organo é uma aplicação que vai gerir os colaboradores da Alura, separados das escolas desenvolvido durante o curso de React com JavasScript da Alura. 
+Projeto Organo é uma aplicação que vai gerir os colaboradores da Alura separados por escolas. Foi desenvolvido durante o curso de "React com JavasScript" e "React como os componentes funcionam" da Alura. 
 
 <p><strong>Objetivos:</strong> 
 
 - Implementar componentes reativos 
 - Manipulação de formulário
-- Cadastrar colaboradores
+- Cadastrar, excluir e favoritar colaboradores
+- Cadastrar e personalizar a cor de novos times
 
 
 ## 💻 Layout  
