@@ -22,3 +22,10 @@
     height: 40px;
     padding: 5px 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .campo label, 
+    .campo input {
+        font-size: 14px;
+    }
+}

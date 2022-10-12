@@ -28,3 +28,9 @@ h1 {
 h1, h2 {
   font-family: 'Prata', serif;
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 32px;
+  }
+}

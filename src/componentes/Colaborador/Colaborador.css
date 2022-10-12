@@ -47,3 +47,10 @@
 .favoritar {
     margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .colaborador .rodape {
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+}

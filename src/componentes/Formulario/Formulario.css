@@ -18,3 +18,17 @@
     font-weight: 400;
     font-size: 32px;
 }
+
+@media screen and (max-width: 768px) {
+    .formulario-container {
+        margin: 40px 20px;
+    }
+
+    .formulario-container .formulario {
+        padding: 16px 32px;
+    }
+
+    .formulario-container .formulario h2 {
+        font-size: 24px;
+    }
+}
