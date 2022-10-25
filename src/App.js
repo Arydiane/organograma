@@ -286,7 +286,7 @@ function App() {
       <section className='times'>
         <div className='titulo__container'>
           <h1>Minha Organização</h1>
-          <button className='btn__exibirFormulario' onClick={alteraExibicaoFormulario}>
+          <button className='btn__exibirFormulario' onClick={alteraExibicaoFormulario} title={ exibicaoFormulario ? "Ocultar formulário" : "Exibir formulário"}>
             <img src={btnIcone} alt="Exibe formulário"/>
           </button>
         </div>
