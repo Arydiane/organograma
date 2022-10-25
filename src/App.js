@@ -3,6 +3,7 @@ import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Rodape from './componentes/Rodape';
 import Time from './componentes/Time';
+import btnIcone from './imagens/btn-icone.png';
 import { v4 as uuidv4 } from 'uuid';
 
 function App() {
@@ -244,6 +245,12 @@ function App() {
     setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id));
   }
 
+  const [exibicaoFormulario, setExibicaoFormulario] = useState(false)
+
+  function alteraExibicaoFormulario() {
+    setExibicaoFormulario(!exibicaoFormulario)
+  }
+
   function mudarCorDoTime(cor, id){
     setTimes(times.map(time => {
       if(time.id === id){
@@ -273,10 +280,17 @@ function App() {
         cadastrarTime={cadastrarTime}
         times={times.map(time => time.nome)} 
         aoCadastrar={ colaborador => setColaboradores([...colaboradores, colaborador])}
+        exibicaoFormulario={exibicaoFormulario}
       />
 
       <section className='times'>
-        <h1>Minha Organização</h1>
+        <div className='titulo__container'>
+          <h1>Minha Organização</h1>
+          <button className='btn__exibirFormulario' onClick={alteraExibicaoFormulario}>
+            <img src={btnIcone} alt="Exibe formulário"/>
+          </button>
+        </div>
+
         {times.map( (time, indice) => 
           <Time 
             aoFavoritar={resolverFavorito}

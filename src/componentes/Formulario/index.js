@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import Botao from '../Botao'
 import { useState } from 'react'
 
-const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
+const Formulario = ({aoCadastrar, times, cadastrarTime, exibicaoFormulario}) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
@@ -29,7 +29,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
     }
 
     return (
-        <section className='formulario-container'>
+        <section className={ exibicaoFormulario ? 'formulario-container' : 'formulario-container invisivel'}>
             <form className='formulario' onSubmit={aoSubmeter}>
                 <h2>Preencha os dados para criar o card do colaborador.</h2>
                 <Campo 
